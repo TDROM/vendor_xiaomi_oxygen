@@ -1,2 +1,0 @@
-service thermalservice /system/bin/thermalserviced
-    class core
