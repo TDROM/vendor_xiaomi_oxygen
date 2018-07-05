@@ -108,7 +108,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/oxygen/proprietary/vendor/bin/wcnss_filter:system/vendor/bin/wcnss_filter \
     vendor/xiaomi/oxygen/proprietary/vendor/bin/wcnss_service:system/vendor/bin/wcnss_service \
     vendor/xiaomi/oxygen/proprietary/vendor/bin/xtra-daemon:system/vendor/bin/xtra-daemon \
-    vendor/xiaomi/oxygen/proprietary/vendor/etc/acdbdata/adsp_avs_config.acdb:system/vendor/etc/acdbdata/adsp_avs_config.acdb \
     vendor/xiaomi/oxygen/proprietary/vendor/etc/acdbdata/QRD/QRD_Bluetooth_cal.acdb:system/vendor/etc/acdbdata/QRD/QRD_Bluetooth_cal.acdb \
     vendor/xiaomi/oxygen/proprietary/vendor/etc/acdbdata/QRD/QRD_General_cal.acdb:system/vendor/etc/acdbdata/QRD/QRD_General_cal.acdb \
     vendor/xiaomi/oxygen/proprietary/vendor/etc/acdbdata/QRD/QRD_Global_cal.acdb:system/vendor/etc/acdbdata/QRD/QRD_Global_cal.acdb \
@@ -169,6 +168,8 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/oxygen/proprietary/vendor/etc/init/vendor.qti.hardware.qdutils_disp@1.0-service-qti.rc:system/vendor/etc/init/vendor.qti.hardware.qdutils_disp@1.0-service-qti.rc \
     vendor/xiaomi/oxygen/proprietary/vendor/etc/init/vendor.qti.hardware.tui_comm@1.0-service-qti.rc:system/vendor/etc/init/vendor.qti.hardware.tui_comm@1.0-service-qti.rc \
     vendor/xiaomi/oxygen/proprietary/vendor/etc/perf/perfboostsconfig.xml:system/vendor/etc/perf/perfboostsconfig.xml \
+    vendor/xiaomi/oxygen/proprietary/vendor/etc/surround_sound_3mic/surround_sound_rec_5.1.cfg:system/vendor/etc/surround_sound_3mic/surround_sound_rec_5.1.cfg \
+    vendor/xiaomi/oxygen/proprietary/vendor/etc/surround_sound_3mic/surround_sound_rec_AZ.cfg:system/vendor/etc/surround_sound_3mic/surround_sound_rec_AZ.cfg \
     vendor/xiaomi/oxygen/proprietary/vendor/etc/permissions/android.hardware.camera.full.xml:system/vendor/etc/permissions/android.hardware.camera.full.xml \
     vendor/xiaomi/oxygen/proprietary/vendor/etc/permissions/android.hardware.camera.raw.xml:system/vendor/etc/permissions/android.hardware.camera.raw.xml \
     vendor/xiaomi/oxygen/proprietary/vendor/etc/permissions/qcrilhook.xml:system/vendor/etc/permissions/qcrilhook.xml \
