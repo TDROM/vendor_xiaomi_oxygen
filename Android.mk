@@ -20,17 +20,6 @@ LOCAL_PATH := $(call my-dir)
 ifeq ($(TARGET_DEVICE),oxygen)
 
 include $(CLEAR_VARS)
-LOCAL_MODULE := libldacBT_enc
-LOCAL_MODULE_OWNER := xiaomi
-LOCAL_SRC_FILES_64 := proprietary/lib64/libldacBT_enc.so
-LOCAL_SRC_FILES_32 := proprietary/lib/libldacBT_enc.so
-LOCAL_MULTILIB := both
-LOCAL_MODULE_TAGS := optional
-LOCAL_MODULE_CLASS := SHARED_LIBRARIES
-LOCAL_MODULE_SUFFIX := .so
-include $(BUILD_PREBUILT)
-
-include $(CLEAR_VARS)
 LOCAL_MODULE := vendor.display.color@1.0
 LOCAL_MODULE_OWNER := xiaomi
 LOCAL_SRC_FILES_64 := proprietary/lib64/vendor.display.color@1.0.so

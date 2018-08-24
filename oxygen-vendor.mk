@@ -833,7 +833,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/oxygen/proprietary/vendor/radio/qcril_database/upgrade/2_version_intro.sql:system/vendor/radio/qcril_database/upgrade/2_version_intro.sql
 
 PRODUCT_PACKAGES += \
-    libldacBT_enc \
     vendor.display.color@1.0 \
     vendor.qti.hardware.iop@1.0 \
     audio.primary.msm8953 \
