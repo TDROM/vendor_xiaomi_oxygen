@@ -1,5 +1,5 @@
-# Copyright (C) 2017-2018 The LineageOS Project
-# Copyright (C) 2017-2018 The PixelExperience Project
+# Copyright (C) 2018 The LineageOS Project
+# Copyright (C) 2018 The PixelExperience Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -18,6 +18,17 @@
 LOCAL_PATH := $(call my-dir)
 
 ifeq ($(TARGET_DEVICE),oxygen)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE := libldacBT_enc
+LOCAL_MODULE_OWNER := xiaomi
+LOCAL_SRC_FILES_64 := proprietary/lib64/libldacBT_enc.so
+LOCAL_SRC_FILES_32 := proprietary/lib/libldacBT_enc.so
+LOCAL_MULTILIB := both
+LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE_CLASS := SHARED_LIBRARIES
+LOCAL_MODULE_SUFFIX := .so
+include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
 LOCAL_MODULE := vendor.display.color@1.0
@@ -41,19 +52,18 @@ LOCAL_MODULE_CLASS := SHARED_LIBRARIES
 LOCAL_MODULE_SUFFIX := .so
 include $(BUILD_PREBUILT)
 
-include $(CLEAR_VARS)
-LOCAL_MODULE := audio.primary.msm8953
-LOCAL_MODULE_OWNER := xiaomi
-LOCAL_SRC_FILES_64 := proprietary/vendor/lib64/hw/audio.primary.msm8953.so
-LOCAL_SRC_FILES_32 := proprietary/vendor/lib/hw/audio.primary.msm8953.so
-LOCAL_MULTILIB := both
-LOCAL_MODULE_TAGS := optional
-LOCAL_MODULE_CLASS := SHARED_LIBRARIES
-LOCAL_MODULE_SUFFIX := .so
-LOCAL_MODULE_RELATIVE_PATH := hw
-LOCAL_VENDOR_MODULE := true
-LOCAL_OVERRIDES_PACKAGES := audio.primary.msm8953
-include $(PREBUILT_SHARED_LIBRARY)
+#include $(CLEAR_VARS)
+#LOCAL_MODULE := audio.primary.msm8953
+#LOCAL_MODULE_OWNER := xiaomi
+#LOCAL_SRC_FILES_64 := proprietary/vendor/lib64/hw/audio.primary.msm8953.so
+#LOCAL_SRC_FILES_32 := proprietary/vendor/lib/hw/audio.primary.msm8953.so
+#LOCAL_MULTILIB := both
+#LOCAL_MODULE_TAGS := optional
+#LOCAL_MODULE_CLASS := SHARED_LIBRARIES
+#LOCAL_MODULE_SUFFIX := .so
+#LOCAL_MODULE_RELATIVE_PATH := hw
+#LOCAL_VENDOR_MODULE := true
+#include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
 LOCAL_MODULE := libgpustats
