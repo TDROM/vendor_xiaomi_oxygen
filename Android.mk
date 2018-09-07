@@ -89,6 +89,17 @@ LOCAL_MODULE_SUFFIX := .so
 LOCAL_VENDOR_MODULE := true
 include $(BUILD_PREBUILT)
 
+#include $(CLEAR_VARS)
+#LOCAL_MODULE := camera.msm8953
+#LOCAL_MODULE_OWNER := xiaomi
+#LOCAL_SRC_FILES := proprietary/vendor/lib/hw/camera.msm8953.so
+#LOCAL_MULTILIB := 32
+#LOCAL_MODULE_TAGS := optional
+#LOCAL_MODULE_CLASS := SHARED_LIBRARIES
+#LOCAL_MODULE_SUFFIX := .so
+#LOCAL_VENDOR_MODULE := true
+#include $(BUILD_PREBUILT)
+
 include $(CLEAR_VARS)
 LOCAL_MODULE := libts_detected_face_hal
 LOCAL_MODULE_OWNER := xiaomi
